@@ -1,0 +1,21 @@
+class Kendaraan:
+    def __init__(self, merk, pembelian,pembayaran):
+        self.merk = merk
+        self.pembelian = pembelian
+        self.pembayaran = pembayaran
+
+ 
+
+class Mobil(Kendaraan):
+    def __init__(self, merk, pembelian, pembayaran, warna):
+        super().__init__(merk,pembelian,pembayaran)
+        self.warna = warna
+      
+
+    
+
+m = Mobil("Toyota","Baru","Cash", "Merah")
+print(m.merk)
+print(m.pembelian)
+print(m.pembayaran)
+print(m.warna)
